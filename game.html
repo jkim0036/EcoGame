@@ -63,6 +63,13 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+     function contentTheProblem() {
+  	document.getElementById("thecontent").innerHTML =  "<h2>This is all about the Problem!</h2><p>Let me tell you about this BIG problem! It sucks having hurricanes. Did you know they destroy houses and displace people and stuff?</p>";
+    closeNav();
+  }
+  function contentTheGame() {
+  	document.getElementById("thecontent").innerHTML =  "<h2>This is all about the Game!</h2><p>Dude. Our game. It's so cool. It's going to blow your mind!</p>";
+    closeNav();
 </script>
 <header>
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
