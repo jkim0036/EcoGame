@@ -1,11 +1,13 @@
 var menuState = {
     preload: function () {
       game.load.image('background', 'assets/sun2.png');
+      game.load.image('sidewalk', 'assets/sidewalk2.png');
     },
     create: function () {
 
         // variablename(x-position, y-position, text, {font, text color});
         this.background = game.add.sprite(0, 0,'background');
+        this.sidewalk = game.add.sprite(0, 440 ,'sidewalk');
         var nameLabel = game.add.text(20, 80, 'Sidewalk Doggo',
                                       { font: '50px Impact', fill: '#ffffff'});
         var startLabel = game.add.text(160, game.height-80, 'Press "w" to start',
@@ -29,7 +31,7 @@ var menuState = {
 var winState = {
       preload: function() {
         game.load.image('sidewalk', 'assets/sidewalk2.png');
-        game.load.image('background', 'assets/sun2.png');
+        game.load.image('background', 'assets/happywin.png');
       },
 
       create: function() {
@@ -57,7 +59,7 @@ var winState = {
 var loseState = {
       preload: function() {
         game.load.image('sidewalk', 'assets/sidewalk2.png');
-        game.load.image('background', 'assets/sun2.png');
+        game.load.image('background', 'assets/sadsun.png');
       },
 
       create: function() {
@@ -87,7 +89,7 @@ var mainState = {
         game.load.image('brick', 'assets/brick2.png');
         game.load.image('ball', 'assets/doggo2.png');
         game.load.image('sidewalk', 'assets/sidewalk2.png');
-        game.load.image('background', 'assets/sun2.png');
+        game.load.image('background', 'assets/finalsun.png');
     },
 
     create: function() {
@@ -140,3 +142,4 @@ game.state.add('main', mainState);
 game.state.add('win', winState);
 game.state.add('lose', loseState);
 game.state.start('menu');
+
