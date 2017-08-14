@@ -38,7 +38,7 @@ var winState = {
       this.background = game.add.sprite(0, 0,'background');
       this.sidewalk = game.add.sprite(0, 440 ,'sidewalk');
       var winLabel = game.add.text(80, 80, 'YOU WON!',
-                                  {font: '50px Impact', fill: '#16FF00'});
+                                  {font: '50px Impact', fill: '#ffffff'});
 
       //instructions on how to restart the game
       var startLabel = game.add.text(80, game.height-80, 'Press the "w" key to restart',
@@ -66,7 +66,7 @@ var loseState = {
       this.background = game.add.sprite(0, 0,'background');
       this.sidewalk = game.add.sprite(0, 440 ,'sidewalk');
       var winLabel = game.add.text(80, 80, 'GAME OVER',
-                                  {font: '50px Impact', fill: '#FF0000'});
+                                  {font: '50px Impact', fill: '#ffffff'});
 
       //instructions on how to restart the game
       var startLabel = game.add.text(80, game.height-80, 'Press the "w" key to restart',
