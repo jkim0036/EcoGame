@@ -89,7 +89,7 @@ var mainState = {
         game.load.image('brick', 'assets/brick2.png');
         game.load.image('ball', 'assets/doggo2.png');
         game.load.image('sidewalk', 'assets/sidewalk2.png');
-        game.load.image('background', 'assets/finalsun2.png');
+        game.load.image('background', 'assets/finalsun.png');
     },
 
     create: function() {
