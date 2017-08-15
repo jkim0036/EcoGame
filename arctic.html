@@ -1,117 +1,137 @@
+
 <!DOCTYPE html>
 <html>
-
-    
-<title>Arctic-ECO Environmental Site</title>
-    
-<head><meta name="viewport" content="width=device-width, initial-scale=1", user-scalable=no></head>
-
+<title>Arctic-ECO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    header, footer {
-        padding: 1em;
-        color: white;
-        background-color: rgb(45, 71, 17);
-        clear: right;
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://github.com/jkim0036/EcoGame/blob/master/alaskamtns.jpg?raw=true');
+    min-height: 100%;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
     }
-    span {
-        color: white;
-    }
-    body {
-      background-color: rgb(176, 214, 94);
-      font-family: "Lato", sans-serif;
-    }
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-    .sidenav a:hover, .offcanvas a:focus{
-        color: #f1f1f1;
-    }
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-     @media screen and (max-height: 450px) {
-        .sidav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}en
-    }
-    
+}
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 </style>
-    
+  
 <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+  function openNav() { 
+  document.getElementById("mySidenav").style.width = "250px";
 }
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-</script>
-<header>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     
-    <div align="center"><font size="22"><b>ECO Environmental Site</b></div></font>
-</header>
+function contentGame() {
+  document.getElementById("bodycontent").innerHTML = "<h2>Environmental Conservation Objective Game</h2><b><h3></h3></b>";  
+  closeNav();
+}
+</script>
   
+<body>
+
+<!-- Navbar (sit on top) -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <img src="" height = "25" width = "56"></img><a href="index.html">Home</a>
+  <img src="" height = "25" width = "56"></img><a href=".">Home*</a>
   <img src="" height = "25" width = "56"></img><a href="game.html">Game</a>
-  <img src="arcticIcon.png" height = "25" width = "56"></img><a href=".">Arctic*</a>
+   <!-- <a href="javascript:void(0)" onclick="contentGame()">Game</a> -->
+  <img src="" height = "25" width = "56"></img><a href="problem.html">The Problem</a>
+ <img src="arcticIcon.png" height = "25" width = "56"></img><a href="arctic.html">Arctic</a>
   <img src="urbanIcon.png" height = "25" width = "56"></img><a href="urban.html">Urban</a>
   <img src="" height = "25" width = "56"></img><a href="world.html">The World</a>
-  <img src="" height = "25" width = "56"></img><a href="about.html">About Us</a>
+  <img src="" height = "25" width = "56"></img><a href="about.html">About Us</a> 
   <img src="" height = "25" width = "56"></img><a href="resources.html">User Resources</a>
 </div>
 
-<body background="alaskamtns.jpg">
-<div align="center"><h1>Arctic</h1>
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 </div>
-<br>
-<br>
-    <div align="center">
-     <div style="height:450px;width:750px;overflow:auto;background-color:#B8B8B8;color:black;scrollbar-base-color:gold;font-family:sans-serif;padding:10px;"><div align="center"><h2>Global Warming</h2>
-<p>This page will focus particularly on cold climates and glaciers. Here it will be addressed how the planet's ice is one of the biggest give-aways to how CO^2 emissions are affecting the very balance of nature.</p>
-         <p>Global warming is currently a big problem in the world...</p>
-    <br>
-    <h2>How We Know Global Warming is Real</h2>
-    <p>Global Warming is not a myth, and here's why...</p>
-    <br>
-    <h2>Conclusion & What Can Be Done</h2>
-    <p>Global Warming is a big issue in our time, but this is what we can do to make it better...</p>
-    <br>
-    <br>
-    </div>
-    <h3><b><n>Resources:</n></b></h3>
-    <p><br>
-        <li> Background image courtesy of <a href="https://www.instagram.com/galaxy.cuup/">Rhi Baker</a> (with permission).
-        <br>
-   >
-        <br>
-   >
-    <br>
-    </p>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-green w3-xxlarge w3-wide w3-animate-opacity">ARCTIC</span>
+  </div>
 </div>
-    </div>
+
+<!-- Container (About Section) -->
+<class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ARCTIC INFO</h3>
+  <p class="w3-center"><em>Environmental Damage</em></p>
+ <p>Global Warming is not a myth, and here's why...</p>
+
+<!-- Footer -->
+<footer class="w3-row w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+
+
 </body>
-<br>
-<footer></footer>
 </html>
