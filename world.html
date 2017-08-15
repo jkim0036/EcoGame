@@ -1,131 +1,89 @@
-
 <!DOCTYPE html>
 <html>
-<title>World-ECO</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>The World-ECO Environmental Site</title>
+    
+<head><meta name="viewport" content="width=device-width, initial-scale=1", user-scalable=no></head>
+
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('https://raw.githubusercontent.com/jkim0036/EcoGame/master/alaskamtns2.jpg');
-    min-height: 100%;
-}
-
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
+    header, footer {
+        padding: 1em;
+        color: white;
+        background-color: rgb(45, 71, 17);
+        clear: right;
     }
-}
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+    span {
+        color: white;
+    }
+    body {
+      background-color: rgb(176, 214, 94);
+      font-family: "Lato", sans-serif;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+     @media screen and (max-height: 450px) {
+        .sidav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}en
+    }
+    
 </style>
-  
+    
 <script>
-  function openNav() { 
-  document.getElementById("mySidenav").style.width = "250px";
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
 }
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-    
-function contentGame() {
-  document.getElementById("bodycontent").innerHTML = "<h2>Environmental Conservation Objective Game</h2><b><h3></h3></b>";  
-  closeNav();
-}
 </script>
+<header>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <div align="center"><font size="22"><b>ECO Environmental Site</b></span></div></font>
+</header>
   
-<body>
-
-<!-- Navbar (sit on top) -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <img src="" height = "25" width = "56"></img><a href=".">Home</a>
+  <img src="" height = "25" width = "56"></img><a href="index.html">Home</a>
   <img src="" height = "25" width = "56"></img><a href="game.html">Game</a>
-   <!-- <a href="javascript:void(0)" onclick="contentGame()">Game</a> -->
-  <img src="" height = "25" width = "56"></img><a href="problem.html">The Problem</a>
- <img src="arcticIcon.png" height = "25" width = "56"></img><a href="arctic.html">Arctic</a>
+  <img src="arcticIcon.png" height = "25" width = "56"></img><a href="arctic.html">Arctic</a>
   <img src="urbanIcon.png" height = "25" width = "56"></img><a href="urban.html">Urban</a>
-  <img src="" height = "25" width = "56"></img><a href="world.html">The World*</a>
-  <img src="" height = "25" width = "56"></img><a href="about.html">About Us</a> 
+  <img src="" height = "25" width = "56"></img><a href=".">The World*</a>
+  <img src="" height = "25" width = "56"></img><a href="about.html">About Us</a>
   <img src="" height = "25" width = "56"></img><a href="resources.html">User Resources</a>
 </div>
-
-  
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-green w3-xxlarge w3-wide w3-animate-opacity">THE WORLD</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">THE WORLD</h3>
-  <p class="w3-center"><em>This page lists data collected from continents that weren't included on the other pages. This page will be expanded over time, and is in alphabetical order.</em></p>
-<div align = "center">
-  <h2>Alaska</h2>
+<div align="center"><h2>The World</h2>
+    <p>This page lists data collected from continents that weren't included on the other pages. This page will be expanded over time, and is in alphabetical order.</p>
+    
+     <h2>Alaska</h2>
     <br>
     <p>Below is a time-lapse of the receding Columbia Glacier in Alaska.</p>
     <iframe src="https://giphy.com/embed/xT39D6dL9VlY44H5Fm" width="480" height="315" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
@@ -134,6 +92,23 @@ function contentGame() {
 As the glacier terminus has retreated, the Columbia has thinned substantially ... Since the 1980s, the glacier has lost about half of its total thickness and volume. Rings of freshly exposed rock, known as trimlines, become especially prominent around the inlet throughout the 2000s."</p>
 -Adam Voiland, NASA
         <br>
+    <br>
+    <h2>Australia/Great Barrier Reef/Coral Reefs</h2>
+    <br>
+    <p><li>25% of all marine life relies on coral reefs. There are an estimated 228,450 known marine species in the ocean. A quarter of that is approximately 57,112, and even more species rely on those organisms for their own survival, including Humans. Up to a billion Humans rely on these fish for their very way of life, everywhere from their own food supply to fueling their government and economy.
+<br>
+<li> 93% of CO^2 emission temperature is absorbed by the ocean. If the ocean wasn’t absorbing all of this heat, the Earth’s average surface temperature would be approximately 122 degrees Fahrenheit, or 50 degrees Centigrade.
+<br>
+<li>A notable reef is the Great Barrier Reef in Australia. The reef itself spans 2,000 kilometers (1,243 miles); that is approximately the length of the entire eastern coast of the United States. And the reef is dying at a rapid pace. In just 2016 alone, 29% of the Great Barrier Reef died--67% of that being the northern portion. That’s the equivalent of losing all the trees between Washington D.C. and Maine.
+<br>
+<li>Coral is an animal, though it has plant cells. The plant cells absorb the sun’s rays and photosynthesize. However, it is also extremely sensitive to even the slightest temperature changes. In some parts of the world, the water is up to 8.7 degrees Fahrenheit hotter than it should be, and just 3.6 degrees Fahrenheit (2.0 degrees Centigrade) is enough to cause the corals to act out of stress and begin bleaching. Corals bleaching is a very similar process to when Humans get a fever; they begin expelling sick plant cells in an attempt to remain healthy, but eventually lose so many that they can no longer photosynthesize. By that point, they are well along their way to starving, and eventually dying.
+<br>
+<li>The first known large coral bleaching was in the early 1980s. In 1998 and 1999, the first global mass bleaching occurred. In 2010, the second bleaching. And in 2015, the third one was already well on it’s way. Within the last 30 years, we have lost up to 90% of the coral in Florida. On a global scale, we have lost 50% of our world’s coral.
+<br>
+<li>Aside from being vital to nature’s very way of functioning, coral has many medicinal uses that Humans are still studying. For example, the drug Prostaglandin is harvested from sea fans, and is a notable force in fighting back against Cancer.
+<br>
+<li>Coral Reefs act as barriers to the ocean, breaking up large waves and protecting coastal towns and cities from cyclones and monsoons. It acts as a natural barrier better than Humanity could ever hope to imitate, and without it, weather could become much more serious and dangerous.</p>
+    <br>
     <br>
     <h2>Beijing</h2>
     <br>
@@ -168,14 +143,5 @@ As the glacier terminus has retreated, the Columbia has thinned substantially ..
 <br>
 <li><a href="https://notendur.hi.is/oi/icelandic_glaciers.htm">Icelandic Glaciers</a>
 <br>
-</div>
-  
-<!-- Footer -->
-<footer class="w3-row w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-</footer>
- 
-
-
-</body>
+<footer></footer>
 </html>
