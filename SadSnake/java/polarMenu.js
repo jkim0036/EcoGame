@@ -1,9 +1,3 @@
-
-/* Menu state displays instructions and waits for the player to perform
-actions before calling next state, rather than calling automatically
-(remove game.state.start statement from create function) */
-
-
 var menuState = {
 
     create: function () {
@@ -24,8 +18,9 @@ var menuState = {
 
     //start function calls play state
     start: function() {
-//        game.stage.sprite(0, 0, 640, 480 'ice');
         game.state.start('play');
     }
 
 };
+
+alert('menu is working');
