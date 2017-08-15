@@ -1,107 +1,140 @@
+
 <!DOCTYPE html>
 <html>
-
-<title>ECO Environmental Site</title>
-
-<head><meta name="viewport" content="width=device-width, initial-scale=1", user-scalable=no></head>
-
+<title>Resources-ECO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    header, footer {
-        padding: 1em;
-        color: white;
-        background-color: rgb(45, 71, 17);
-        clear: right;
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://github.com/jkim0036/EcoGame/blob/master/alaskamtns.jpg?raw=true');
+    min-height: 100%;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
     }
-    span {
-        color: white;
-    }
-    body {
-      background-color: rgb(176, 214, 94);
-      font-family: "Lato", sans-serif;
-    }
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-    .sidenav a:hover, .offcanvas a:focus{
-        color: #f1f1f1;
-    }
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-     @media screen and (max-height: 450px) {
-        .sidav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}en
-    }
-    
-    .padding {
-        <style="padding-left=30px;
-        padding-right=30px;"
-    }
-    
+}
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 </style>
-    
+  
 <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+  function openNav() { 
+  document.getElementById("mySidenav").style.width = "250px";
 }
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-</script>
-<header>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     
-    <div align="center"><font size="22"><b>ECO Environmental Site</b></span></div></font>
-</header>
+function contentGame() {
+  document.getElementById("bodycontent").innerHTML = "<h2>Environmental Conservation Objective Game</h2><b><h3></h3></b>";  
+  closeNav();
+}
+</script>
   
+<body>
+
+<!-- Navbar (sit on top) -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <img src="" height = "25" width = "56"></img><a href="index.html">Home</a>
+  <img src="" height = "25" width = "56"></img><a href=".">Home*</a>
   <img src="" height = "25" width = "56"></img><a href="game.html">Game</a>
-  <img src="arcticIcon.png" height = "25" width = "56"></img><a href="arctic.html">Arctic</a>
+   <!-- <a href="javascript:void(0)" onclick="contentGame()">Game</a> -->
+  <img src="" height = "25" width = "56"></img><a href="problem.html">The Problem</a>
+ <img src="arcticIcon.png" height = "25" width = "56"></img><a href="arctic.html">Arctic</a>
   <img src="urbanIcon.png" height = "25" width = "56"></img><a href="urban.html">Urban</a>
   <img src="" height = "25" width = "56"></img><a href="world.html">The World</a>
-  <img src="" height = "25" width = "56"></img><a href="about.html">About Us</a>
-  <img src="" height = "25" width = "56"></img><a href=".">User Resources*</a>
+  <img src="" height = "25" width = "56"></img><a href="about.html">About Us</a> 
+  <img src="" height = "25" width = "56"></img><a href="resources.html">User Resources</a>
 </div>
-<div align="center"><h1>User Resources</h1>
-     <div align="center">
-     <div style="height:450px;width:750px;overflow:auto;background-color:white;color:black;scrollbar-base-color:gold;font-family:sans-serif;padding:10px;"><div align="center"><h2></h2>
- <p>This is the page you will want to look at for credible resources stating evidence. You can also use this page to learn what you can do to help.</p>
-<br>
-<br>
-<h2> Credible Evidence</h2>
-<br>
-<p><a href="https://www.ted.com/talks/james_balog_time_lapse_proof_of_extreme_ice_loss#t-1132064">Chasing Ice by James Balog: TED Talk</a></p>
-<br>
-<h2>What You Can Do</h2>
-<br>
+
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-green w3-xxlarge w3-wide w3-animate-opacity">RESOURCES</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">CREDIBle EVIDENCE</h3>
+  <p class="w3-center"><em>What You Can Do:</em></p>
+ <p><a href="https://www.ted.com/talks/james_balog_time_lapse_proof_of_extreme_ice_loss#t-1132064">Chasing Ice by James Balog: TED Talk</a></p>
 <p><a href="https://www.wild.org/cca/extreme-ice-survey/donate/">Support EIS</a>
-<br>
-<a href="http://unfccc.int/paris_agreement/items/9485.php">Support the Paris Agreement</a></p>
-</div>
-</div>
-<br>
-<footer></footer>
+  <br>
+  <a href="http://unfccc.int/paris_agreement/items/9485.php">Support the Paris Agreement</a></p>
+  
+<!-- Footer -->
+<footer class="w3-row w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+
+
+</body>
 </html>
