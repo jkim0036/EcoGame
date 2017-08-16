@@ -28,7 +28,7 @@ var playState = {
         this.win = {};
         this.win = game.add.sprite(256, 256, 'win');
         game.physics.enable(this.win, Phaser.Physics.ARCADE);
-        this.win.scale.set(2);
+        this.win.scale.set(1.5);
 
         this.iceberg = {};
         this.iceberg = game.add.sprite(100, 200, 'iceberg');
