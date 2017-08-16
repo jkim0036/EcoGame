@@ -9,7 +9,7 @@ var menuState = {
         this.background = game.add.sprite(0, 0,'background');
         this.sidewalk = game.add.sprite(0, 440 ,'sidewalk');
         var nameLabel = game.add.text(20, 80, 'Sidewalk Doggo',
-                                      { font: '50px Impact', fill: '#ffffff'});
+                                      {font: '50px Impact', fill: '#ffffff'});
         var startLabel = game.add.text(160, game.height-80, 'Press "w" to start',
                                       {font: '25px Impact', fill: '#ffffff'});
         var instructionLabel = game.add.text(20, 200, 'Protect the dog from touching the hot \nsidewalk by moving the skateboard with \nthe arrow keys!',
