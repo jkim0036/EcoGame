@@ -192,7 +192,7 @@ var playState = {
   }
   },
   generateIce3: function() {
-    var randomNum = Math.random()*1500;
+    var randomNum = Math.random()*1200;
     //console.log(randomNum);
     if(randomNum<2) {
     var randomX = Math.floor(Math.random() * 40 ) * squareSize,
@@ -203,7 +203,7 @@ var playState = {
   }
   },
   generateIce4: function() {
-    var randomNum = Math.random()*1500;
+    var randomNum = Math.random()*1200;
     //console.log(randomNum);
     if(randomNum<2) {
     var randomX = Math.floor(Math.random() * 40 ) * squareSize,
@@ -225,7 +225,7 @@ var playState = {
   }
   },
   generateIce6: function() {
-    var randomNum = Math.random()*1500;
+    var randomNum = Math.random()*1200;
     //console.log(randomNum);
     if(randomNum<2) {
     var randomX = Math.floor(Math.random() * 40 ) * squareSize,
@@ -236,7 +236,7 @@ var playState = {
   }
   },
   generateIce7: function() {
-    var randomNum = Math.random()*1500;
+    var randomNum = Math.random()*1200;
     //console.log(randomNum);
     if(randomNum<2) {
     var randomX = Math.floor(Math.random() * 40 ) * squareSize,
